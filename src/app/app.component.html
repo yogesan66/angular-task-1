@@ -1,0 +1,42 @@
+<h1>Learning Angular</h1>
+<div class="container">
+
+  <div class="header">
+    <p style="color:white">Title</p>
+    <p style="color:white" >Description</p>
+    <p style="color:white">Done</p>
+  </div>
+
+<form>
+  <div class="one text"   ng-hide="false">
+    <span>1</span>
+    <input type="checkbox" [id]="checkbox" ngModel="checkselect">
+  </div>
+
+  <div class="two text"   ngHide="checkselected=false">    
+    <span>2</span>
+    <input type="checkbox" ngModel="checkselect">
+  </div>
+
+  <div class="three text"   ngHide="checkselected=false">
+    <span>3</span>
+    <input type="checkbox" ngModel="checkselect">
+  </div>
+
+  <div class="four text"   ngHide="checkselected=false">
+    <span>4</span>
+    <input type="checkbox" ngModel="checkselect">
+  </div>
+
+  <div class="five text"   ngHide="checkselected=false">
+    <span>5</span>
+    <input type="checkbox" ngModel="checkselect">
+  </div>
+
+  <div class="six text"   ngHide="checkselected=false">
+    <span>6</span>
+    <input type="checkbox" ngModel="checkselect">
+  </div>
+</form>
+</div>
+<input type="submit" value="Hide completed tasks" (click)="onclick()">
